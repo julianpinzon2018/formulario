@@ -40,7 +40,7 @@ const FormStyled = styled.div`
   @media screen and (max-width: 760px) {
     .input {
       font-size: 1rem;
-      block-size: 2rem;
+      block-size: 1rem;
       inline-size: 17rem;
     }
   }
