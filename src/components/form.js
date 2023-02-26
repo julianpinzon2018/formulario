@@ -43,6 +43,10 @@ const FormStyled = styled.div`
       block-size: 1rem;
       inline-size: 17rem;
     }
+    .label {
+      gap: 0.3rem;
+      font-size: 1.2rem;
+    }
   }
 `;
 
