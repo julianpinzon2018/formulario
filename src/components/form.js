@@ -17,7 +17,6 @@ const FormStyled = styled.div`
   }
   .input {
     padding: 0.5rem;
-    inline-size: 20rem;
     border: none;
     border: 1px solid gray;
     border-radius: 0.5rem;
@@ -37,6 +36,13 @@ const FormStyled = styled.div`
     block-size: 2.8rem;
     inline-size: 8rem;
     font-size: 1.2rem;
+  }
+  @media screen and (max-width: 760px) {
+    .input {
+      font-size: 1rem;
+      block-size: 2rem;
+      inline-size: 17rem;
+    }
   }
 `;
 
