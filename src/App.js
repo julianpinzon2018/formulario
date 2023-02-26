@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from "./components/layout";
+import Header from "./components/header";
+import Formulario from "./components/form";
+import Footer from "./components/footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Subscrito from "./components/subscrito";
+import { useState } from "react";
 
 function App() {
+  const [html, setHtml] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Formulario setHtml={setHtml} />} />
+          <Route path="/subscrito" element={<Subscrito html={html} />} />
+        </Routes>
+
+        <Footer />
+      </BrowserRouter>
+    </Layout>
   );
 }
 
