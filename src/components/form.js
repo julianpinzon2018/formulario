@@ -23,7 +23,7 @@ const FormStyled = styled.div`
     text-align: center;
     font-size: 1rem;
     block-size: 2rem;
-    inline-size: 30rem;
+    inline-size: 70vw;
   }
   .button {
     inline-size: 6rem;
@@ -41,7 +41,7 @@ const FormStyled = styled.div`
     .input {
       font-size: 1rem;
       block-size: 1rem;
-      inline-size: 17rem;
+      inline-size: 80vw;
     }
     .label {
       gap: 0.3rem;
