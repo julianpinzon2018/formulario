@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const SubscritoStyled = styled.div`
   display: flex;
   padding: 1.5rem;
-  flex-direction: column;
   gap: 1.5rem;
+  flex-direction: column;
   text-align: center;
   background-color: rgb(220, 220, 220);
   border-radius: 0.5rem;
@@ -35,6 +35,18 @@ const SubscritoStyled = styled.div`
     color: white;
     cursor: pointer;
     text-decoration: none;
+  }
+  @media screen and (max-width: 760px) {
+    padding-inline: 0.5rem;
+    padding-block: 2rem;
+    gap: 1rem;
+    inline-size: 85%;
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
   }
 `;
 
